@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "react-app"
+  ],
+  "plugins": [
+    ["babel-plugin-styled-components",
+    {
+      "ssr": false,
+      "displayName": false,
+      "fileName": false,
+      "minify": false,
+      "transpileTemplateLiterals": false,
+      "pure": true
+    }]
+  ]
+}
