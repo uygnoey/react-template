@@ -1,9 +1,11 @@
 {
   "processors": [
-    "stylelint-processor-styled-components",
-    {
-      "moduleName": "other-library"
-    }
+    [
+      "stylelint-processor-styled-components",
+      {
+        "moduleName": "other-library"
+      }
+    ]
   ],
   "extends": [
     "stylelint-config-recommended",
