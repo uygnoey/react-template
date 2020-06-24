@@ -84,7 +84,9 @@
     ]
   },
   "devDependencies": {
+    "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.6",
+    "lodash": "^4.17.15",
     "prettier": "^1.19.1",
     "stylelint": "^13.0.0",
     "stylelint-config-recommended": "^3.0.0",
