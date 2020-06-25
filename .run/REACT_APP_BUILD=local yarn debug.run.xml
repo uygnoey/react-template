@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="REACT_APP_BUILD=local yarn debug" type="JavascriptDebugType" activateToolWindowBeforeRun="false" uri="http://localhost:3000" useFirstLineBreakpoints="true">
+    <method v="2">
+      <option name="NpmBeforeRunTask" enabled="true">
+        <package-json value="$PROJECT_DIR$/package.json" />
+        <command value="start" />
+        <node-interpreter value="project" />
+        <envs>
+          <env name="REACT_APP_BUILD" value="local" />
+        </envs>
+      </option>
+    </method>
+  </configuration>
+</component>

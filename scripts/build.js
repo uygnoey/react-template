@@ -19,6 +19,8 @@ const path = require('path');
 const chalk = require('react-dev-utils/chalk');
 const fs = require('fs-extra');
 const webpack = require('webpack');
+const configFactory = require('../config/webpack.config');
+const paths = require('../config/paths');
 const checkRequiredFiles = require('react-dev-utils/checkRequiredFiles');
 const formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
 const printHostingInstructions = require('react-dev-utils/printHostingInstructions');
@@ -46,8 +48,6 @@ const config = configFactory('production');
 // We require that you explicitly set browsers and do not fall back to
 // browserslist defaults.
 const { checkBrowsers } = require('react-dev-utils/browsersHelper');
-const paths = require('../config/paths');
-const configFactory = require('../config/webpack.config');
 
 checkBrowsers(paths.appPath, isInteractive)
   .then(() => {
@@ -70,13 +70,13 @@ checkBrowsers(paths.appPath, isInteractive)
         console.log(chalk.yellow('Compiled with warnings.\n'));
         console.log(warnings.join('\n\n'));
         console.log(
-          `\nSearch for the ${ 
-            chalk.underline(chalk.yellow('keywords')) 
+          `\nSearch for the ${
+            chalk.underline(chalk.yellow('keywords'))
             } to learn more about each warning.`
         );
         console.log(
-          `To ignore, add ${ 
-            chalk.cyan('// eslint-disable-next-line') 
+          `To ignore, add ${
+            chalk.cyan('// eslint-disable-next-line')
             } to the line before.\n`
         );
       } else {
@@ -158,7 +158,7 @@ function build(previousFileSizes) {
         // Add additional information for postcss errors
         if (Object.prototype.hasOwnProperty.call(err, 'postcssNode')) {
           errMessage +=
-            `\nCompileError: Begins at CSS selector ${ 
+            `\nCompileError: Begins at CSS selector ${
             err.postcssNode.selector}`;
         }
 
